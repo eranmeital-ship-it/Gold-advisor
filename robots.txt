@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /visit/
+Sitemap: https://gold-advisor.com/sitemap.xml
