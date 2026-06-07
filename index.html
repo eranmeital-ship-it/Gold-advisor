@@ -128,7 +128,9 @@
   .review-link:hover{color:var(--navy)}
   @media(max-width:760px){
     .firm{grid-template-columns:42px 1fr;row-gap:14px;padding:22px}
-    .logo-slot{grid-column:2;justify-self:start;width:160px}
+    .firm>div:not([class]){grid-column:1/-1;min-width:0}
+    .firm h3{font-size:1.22rem}
+    .logo-slot{grid-column:2;justify-self:start;width:150px;height:64px}
     .right-col{grid-column:1/-1;flex-direction:row;justify-content:space-between;flex-wrap:wrap}
     .right-col .go{width:auto;flex:1;min-width:140px}
     .ribbon{left:16px}
