@@ -1,0 +1,10 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Gold &amp; Silver Price Widget</title><meta name="robots" content="noindex"><style>html,body{margin:0;padding:6px;background:transparent}</style></head><body><script>(function(){
+  var q=new URLSearchParams(location.search);
+  var d=document.createElement('div');d.className='goldadvisor-pricewidget';
+  d.setAttribute('data-type',q.get('type')||'card');d.setAttribute('data-metal',q.get('metal')||'gold');
+  d.setAttribute('data-theme',q.get('theme')||'light');d.setAttribute('data-accent',q.get('accent')||'#c69320');
+  d.setAttribute('data-range',q.get('range')||'30');
+  var a=document.createElement('a');a.href='https://gold-advisor.com/gold-price-widget/?utm_source=iframe';
+  a.textContent='Live gold & silver prices by Gold Advisor';d.appendChild(a);document.body.appendChild(d);
+  var s=document.createElement('script');s.src='/gold-price-widget/widget.js';s.async=true;document.body.appendChild(s);
+})();</script></body></html>
